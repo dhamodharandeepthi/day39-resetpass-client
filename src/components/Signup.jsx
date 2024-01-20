@@ -57,12 +57,12 @@ function Signup() {
                 <form className="login-form">
                     <div className="textbox">
                         <input type="text" placeholder="Username" required onChange={(e) => setUserName(e.target.value)} />
-                        <span className="material-symbols-outlined"> account_circle </span>
+                        <span className="material-symbols-outlined">  </span>
                     </div>
 
                     <div className="textbox">
                         <input type="email" placeholder="Email" required onChange={(e) => setEmail(e.target.value)} />
-                        <span className="material-symbols-outlined"> email </span>
+                        <span className="material-symbols-outlined"> </span>
                     </div>
 
                     <div className="textbox" >
