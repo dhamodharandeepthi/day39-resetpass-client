@@ -11,7 +11,7 @@ function Dashboard() {
 
 
     useEffect(() => {
-            axios.get('http://localhost:3000/dashboard')
+        axios.get('https://day39-resetpassbe.onrender.com/dashboard')
             .then(res => {
                 if (res.data === 'Success') {
                     setSuc('Successded OK')

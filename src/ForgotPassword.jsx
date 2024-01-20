@@ -10,7 +10,7 @@ function ForgotPassword() {
   axios.defaults.withCredentials = true;
   const handleSubmit = (e) => {
     e.preventDefault()
-    axios.post('http://localhost:3000/forgot-password', { email})
+    axios.post('https://day39-resetpassbe.onrender.com/forgot-password', { email})
       .then(res => {
       
         

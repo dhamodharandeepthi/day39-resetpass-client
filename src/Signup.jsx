@@ -12,7 +12,7 @@ function Signup() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:3000/register', { name, email, password })
+        axios.post('https://day39-resetpassbe.onrender.com/register', { name, email, password })
             .then(res => {
                 console.log('Registered successfully')
                 navigate('/login')

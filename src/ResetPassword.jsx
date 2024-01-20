@@ -13,7 +13,7 @@ function ResetPassword() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post(`http://localhost:3000/reset-password/${id}/${token}`, { password })
+        axios.post(`https://day39-resetpassbe.onrender.com/reset-password/${id}/${token}`, { password })
             .then(res => {
 
 
