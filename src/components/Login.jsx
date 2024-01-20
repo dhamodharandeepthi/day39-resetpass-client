@@ -61,7 +61,7 @@ function Login() {
                 <form className="login-form">
                     <div className="textbox">
                         <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
-                        <span className="material-symbols-outlined"> email </span>
+                        <span className="material-symbols-outlined">  </span>
                     </div>
 
                     <div className="textbox">
@@ -71,7 +71,7 @@ function Login() {
                         />
                         <span className="material-symbols-outlined">
                             {' '}
-                            lock{' '}
+                            {' '}
                         </span>
                     </div>
 

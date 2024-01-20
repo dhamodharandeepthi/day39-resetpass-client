@@ -78,7 +78,7 @@ function Signup() {
                             className="material-symbols-outlined"
                         >
                             {" "}
-                            lock{" "}
+                            {" "}
                         </span>
 
                         <div style={{ display: "flex" }}>
