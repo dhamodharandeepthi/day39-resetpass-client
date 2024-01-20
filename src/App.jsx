@@ -1,28 +1,36 @@
 import React from 'react'
-import Signup from './Signup';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Login from './Login';
-import Dashboard from './Dashboard';
-import ForgotPassword from './ForgotPassword';
-import ResetPassword from './ResetPassword';
+import Signup from './components/Signup'
+import Login from './components/Login'
+import Dashboard from './components/Dashboard.jsx'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Forgetpassword from './components/Forgetpassword'
+import Resetpassword from './components/Resetpassword'
 
 
 function App() {
-  return (
-    <div>
-      <BrowserRouter>
-        <Routes>
-       
-          <Route path='/' element={<Signup />}></Route>
-          <Route path='/login' element={<Login />}></Route>
-          <Route path='/dashboard' element={<Dashboard />}></Route>
-          <Route path='/forgot-password' element={<ForgotPassword/>}></Route>
-          <Route path='/reset-password/:id/:token' element={<ResetPassword/>}></Route>
+    return (
+        <>
+            <BrowserRouter>
+                <Routes>
 
-        </Routes>
-      </BrowserRouter>
-    </div>
-  )
+                    <Route path='/signup' element={<Signup />} />
+
+                    <Route path='/login' element={<Login />} />
+
+                    <Route path='/dashboard' element={<Dashboard />} />
+
+                    <Route path='/forgetpassword' element={<Forgetpassword />} />
+
+                    <Route path='/reset-password/:randomString/:expirationTimestamp' element={<Resetpassword />} />
+
+                    <Route path='*' element={<Login />} />
+
+                </Routes>
+
+            </BrowserRouter>
+
+        </>
+    )
 }
 
 export default App
